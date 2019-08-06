@@ -1,0 +1,14 @@
+body {
+    background-color: beige;
+    user-select: none;
+}
+
+img {
+    border: 2px solid transparent;
+    padding: 10px;
+}
+
+img.selected {
+    background-color: white;
+    border: 2px solid black;
+}
