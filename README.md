@@ -1,6 +1,6 @@
 # picture-swapper
 
-This is a picture swapper web app written in HTML, CSS, and JavaScript.
+Picture swapper web app written in HTML, CSS, and JavaScript.
 
 Use this app at [pictureswapper.mrcodeswildride.com](https://pictureswapper.mrcodeswildride.com/).
 Learn how to make this app at [mrcodeswildride.com](https://www.mrcodeswildride.com/).

@@ -1,0 +1,13 @@
+body {
+  background-color: beige;
+}
+
+img {
+  border: 2px solid transparent;
+  padding: 10px;
+}
+
+.selected {
+  background-color: white;
+  border: 2px solid black;
+}

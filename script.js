@@ -1,24 +1,24 @@
-var green = document.getElementById("green");
-var red = document.getElementById("red");
-var spiny = document.getElementById("spiny");
+let image1 = document.getElementById(`image1`)
+let image2 = document.getElementById(`image2`)
+let image3 = document.getElementById(`image3`)
 
-var selected = null;
+let selectedImage
 
-green.addEventListener("click", select);
-red.addEventListener("click", select);
-spiny.addEventListener("click", select);
+image1.addEventListener(`click`, clickImage)
+image2.addEventListener(`click`, clickImage)
+image3.addEventListener(`click`, clickImage)
 
-function select() {
-    if (!selected) {
-        this.classList.add("selected");
-        selected = this;
-    }
-    else {
-        var temp = selected.getAttribute("src");
-        selected.setAttribute("src", this.getAttribute("src"));
-        this.setAttribute("src", temp);
+function clickImage() {
+  if (selectedImage == null) {
+    selectedImage = this
+    selectedImage.classList.add(`selected`)
+  }
+  else {
+    let temp = selectedImage.src
+    selectedImage.src = this.src
+    this.src = temp
 
-        selected.classList.remove("selected");
-        selected = null;
-    }
+    selectedImage.classList.remove(`selected`)
+    selectedImage = null
+  }
 }
