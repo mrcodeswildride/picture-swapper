@@ -12,8 +12,7 @@ function clickImage() {
   if (selectedImage == null) {
     selectedImage = this
     selectedImage.classList.add(`selected`)
-  }
-  else {
+  } else {
     let temp = selectedImage.src
     selectedImage.src = this.src
     this.src = temp
